@@ -1,20 +1,8 @@
 
 function appendStyleFile(){
-	//var cssId = 'responsiveHotfix';
 	var b = document.createElement('script');
 	b.setAttribute('src','https://pastebin.com/raw/UMSx6TLk');
 	document.head.appendChild(b);
-	/*if (!document.getElementById(cssId))
-	{
-	    var head  = document.getElementsByTagName('head')[0];
-	    var link  = document.createElement('link');
-	    link.id   = cssId;
-	    link.rel  = 'stylesheet';
-	    link.type = 'text/css';
-	    link.href = 'https://pastebin.com/raw/UMSx6TLk';
-	    //link.media = 'all';
-	    head.appendChild(link);
-	}*/
 } 
 
 function appendMetaTag(){
@@ -29,11 +17,11 @@ function appendMetaTag(){
 function bindEvents(){
 	"use strict"
 
-	/*var menuToggle = $("#responsiveMenu-toggle")[0];
+}
 
-	menuToggle.onclick = function() { 
-		
-	}*/
+function clearFixJobTitle() {
+	if(location.pathname.indexOf('/l/') > -1)
+		document.getElementById('header').className = 'jobPost';
 }
 
 function renderResponsiveElements(){
@@ -43,6 +31,7 @@ function renderResponsiveElements(){
 	
 	appendMetaTag();
 	appendStyleFile();
+	clearFixJobTitle();
 	bindEvents();
 }
 renderResponsiveElements();

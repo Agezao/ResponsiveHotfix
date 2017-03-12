@@ -21,6 +21,8 @@ var rawStyle = `
 		height: 0;
 	}
 
+	#header nav,
+	#header,
 	#nav {
 		height: auto;
 	}
@@ -46,8 +48,10 @@ var rawStyle = `
 	    text-align: center;
 	}
 
-	#nav li.act {
-    	width: 100%;
+	#nav li.act,
+	#nav_explore {
+    	width: 100% !important;
+	    text-align: center;
 	}
 
 	#nav > li a.bold,
@@ -67,7 +71,7 @@ var rawStyle = `
 	    font-size: 31px;
 	    line-height: 31px;
 	    width: 100%;
-	    font: 29px/32px Dosis,sans-serif;
+	    font: 32px/34px Dosis,sans-serif;
 	    padding: 25px 19px 35px;
         box-sizing: border-box;
 	}
@@ -76,6 +80,165 @@ var rawStyle = `
 	    padding: 10px 0 !important;
 	}
 
+	#wrap, .wrap {
+		width: 100%;
+	}
+
+	#sticky div.container {
+	    background: #fff;
+	    height: 52px;
+	    padding: 20px 0;
+	    width: auto;
+	    margin: 0 auto;
+	    position: relative;
+	}
+
+	#sticky div ul li.search div {
+        width: calc(100% - 60px);
+    	display: inline-block;
+	    padding: 12px 0 0 0;
+	}
+
+	/* -- Listing -- */
+	.explore section.item {
+	    height: auto;	
+        padding: 12px 15px 30px 15px;
+        margin-bottom: 0;
+	}
+
+	.explore section.item p.image {
+		height: 130px;
+	    width: calc(100% + 30px);
+	    overflow: hidden;
+	    position: relative;
+	    left: -15px;
+	    top: -15px;
+        background-position: center;
+	}
+
+	.explore section.item p.bits {
+	    position: initial;
+	    bottom: 0;
+	    left: 0;
+	    overflow: hidden;
+	}
+
+	.explore section.item p.bits span {
+	    width: auto;
+	    padding: 20px 15px 0 0 !important;
+	}
+
+	/* -- Job Description -- */
+
+	#header.jobPost{
+	    height: 96px;
+    	overflow: hidden;
+	}
+
+	#hero div h1 {
+		/*display: initial;*/
+	}
+
+	#curve {
+	    margin-top: -60px;
+	    height: 120px;
+	    width: 100%;
+	}
+
+	#curve p {
+	    width: 100%;
+        padding-top: 48px;
+	}
+
+	#curve p a#favorite {
+	    margin-right: 10px;
+	}
+
+	#intro h2 {
+	    padding: 10px 19px 35px;
+	}
+
+	#sticky {
+    	height: auto;
+	    margin: 0;
+    	position: initial;
+    	overflow: hidden;
+	}
+
+	#sticky div.container {
+	    height: auto;
+	    padding: 0;
+	}
+
+	#sticky div p.cta {
+		float: none;
+	}
+
+	#sticky div p.cta a {
+		width: calc(100% - 21px);
+	    margin: 0 0 10px 0;
+	}
+
+	#sticky div ul.jump {
+	    height: auto;
+    	overflow: hidden;
+	}
+
+	#sticky div ul.jump li {
+	    display: block;
+	    width: 100%;
+	    float: none;
+	    position: initial;
+	}
+
+	#sidebar, #sidebar .block {
+	    position: inherit;
+	    width: 100%;
+        top: 0;
+	}
+
+	.cLeft {
+	    width: 100%;
+	    position: relative;
+	}
+
+	section.listing_foot {
+	    height: auto;
+        padding: 20px 20px;
+		overflow: hidden;
+	}
+
+	section.listing_foot a.apply {
+        margin: 0 0 10px 0;
+	}
+
+	section.listing_foot a {
+	    margin: 4px 0;
+	}
+
+
+	/* -- Footer -- */
+	footer {
+	    width: 100%;
+		overflow: hidden;
+	}
+
+	footer nav ul {
+	    list-style-type: none;
+	    height: auto;
+	    width: 100%;
+	}
+
+	footer nav ul li {
+	    display: block;
+	    padding: 3px 40px;
+	    text-align: left;
+	}
+
+	footer nav p {
+	    line-height: 22px;
+	    padding: 15px 5px;
+	}
 }`;
 
 var b = document.createElement('style');
